@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home .card-body{
+    text-align: center;
+    margin: 15%;
+}
+.home .card{
+    border: none;
+
+}
+.home .card .card-body{
+    box-shadow: 5px 10px #f0f0f0;
+    height: 50vh;
+}
+.mbg{
+    border-radius: 10%;
+    color: white;
+}
+.butt{
+    color: white ;
+    background-color: black;
+    background: black;
+}
+.butt:hover {
+    background-color:#ec1212;
+    transition: 0.7s;
+    color: white;
+}
+ .activate{
+    margin-top: 5%;
+ }
+ .button{
+    padding-right:40px;
+    color:white;
+    background-color:#0a0a23;
+    border:none; 
+    border-radius:5px; 
+    min-height:70px; 
+    min-width: 180px;
+    font-weight: 700;
+    font-size: xx-large;
+ }
+ .button:hover {
+    background-color:#ec1212;
+    transition: 0.7
+ }
+/* cards section */
+.cool{
+    padding: 4%;
+}
+.cool h1{
+    text-transform: capitalize;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.cool .card{
+    border: 2px solid brown;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px brown;
+    transition: 0.5s;
+    margin: 3%;
+}
+.cool .card img{
+    padding: 3%;
+    border-bottom: 4px solid brown;
+}
+.cool .card:hover{
+    transform: translateY(-30px);
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)) ,url(/img/LOGO.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.reg{
+    padding: 4%;
+}
+.act{
+    color: white;
+    background-color: black;
+}
+.activi{
+    width: 30%;
+    padding-top: 10%;
+    color: black;
+}
+.cool{
+    color: black;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .caroimg{
+        height: 80vh
+    }
+    .welcome h1{
+        text-transform: capitalize;
+        color: orangered;
+        font-weight: 700;
+        font-size: 30px;
+        /* border-bottom: 3-x solid black  */
+    }
+    .title::after{
+        content:"";
+        display: block;
+        width: 900px;
+        height: 3px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home .card img{
+        height: 200px;
+    }
+}

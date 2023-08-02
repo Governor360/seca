@@ -1,0 +1,571 @@
+{% extends 'base.html' %}
+{% block navbar %}{% include 'navbar.html' %}{% endblock navbar %}
+{% block carousel %}{% include 'carousel.html' %}{% endblock carousel %}
+{% block content %}
+<div class="container cool">
+    <h1 class="text-center pt-5 title" style="font-family: 'Times New Roman', Times, serif;font-weight: bolder;">Awards Categories</h1>
+    <div class="row">
+      <div class=".col-12 col-md-6 col-lg-3 pt-3">
+        <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+          <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MOST INFLUENTIAL STUDENT OF THE YEAR</h5>
+            <div class="dropdown">
+              <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                Check Nominees
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="{% url 'mostinigba' %}">Igbariam</a></li>
+                <li><a class="dropdown-item" href="{% url 'mostinuli' %}">Uli</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class=".col-12 col-md-6 col-lg-3 pt-3">
+        <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+          <img src="{{info.carousel4.url}}" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: x-small; font-weight: 900;">BRAND OF THE YEAR</h5>
+            <div class="dropdown">
+              <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                Check Nominees
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="{% url 'mostbigba' %}">Igbariam</a></li>
+                <li><a class="dropdown-item" href="{% url 'mostbuli' %}">Uli</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=".col-12 col-md-6 col-lg-3 pt-3">
+        <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+          <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT ICON OF THE YEAR</h5>
+            <div class="dropdown">
+              <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                Check Nominees
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="{% url 'stdiigba' %}">Igbariam</a></li>
+                <li><a class="dropdown-item" href="{% url 'stdiuli' %}">Uli</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=".col-12 col-md-6 col-lg-3 pt-3">
+        <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+          <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MALE ARTISR OF THE YEAR</h5>
+            <div class="dropdown">
+              <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                Check Nominees
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="{% url 'maigba' %}">Igbariam</a></li>
+                <li><a class="dropdown-item" href="{% url 'mauli' %}">Uli</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">FEMALE ARTIST OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'fmaigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'fmauli' %}">Uli</a></li>
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT DJ OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'stddjigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'stddjuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MALE TIKTOKER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'matigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'matuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">FEMALE TIKTOKER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'fmtigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'fmtuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">CONTENT CREATOR OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'contentigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="contentuli.html">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">ACTOR OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'actorigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'actyuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">ACTRESS OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'actressigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'actressuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">HYPEMAN OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="hypeman of the year.html">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="/hypeman of the year copy.html">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">SKIT MAKER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'skitigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'skituli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">SCHOOL BLOG OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'comigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'comuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT SHOW PROMOTER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'spigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'spuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">EVENT OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'eveigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'eveuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MALE MODEL OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'mmigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'mmuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">FEMALE MODEL OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'fmigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'fmuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT PHOTOGRAPHER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'stpigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'stpuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT VIDEOGRAPHER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'stvigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'stvuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">STUDENT PHILANTHROPIST OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="stppigba">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="stppuli">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">FEMALE BEST DRESSED</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MALE BEST DRESSED</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">BEST COURSE REP</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'courseigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'courseuli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MALE BEST DANCER</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'mdigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'mduli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">FEMALE BEST DANCER</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="{% url 'fmdigba' %}">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="{% url 'fmduli' %}">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MOST FASHIONABLE MALE</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">MOST FASHIONABLE FEMALE</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="/most fashionable female.html">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="/most fashionable female copy.html">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div><div class="row">
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;">ORANIZER OF THE YEAR</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="/organizers of the year.html">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="/organizers of the year copy.html">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: x-small; font-weight: 900;"> holy</h5>
+                <div class="dropdown">
+                  <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Check Nominees
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="">Igbariam</a></li>
+                    <li><a class="dropdown-item" href="">Uli</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: x-small; font-weight: 900;">best comic actress</h5>
+              <div class="dropdown">
+                <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  Check Nominees
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="">Igbariam</a></li>
+                  <li><a class="dropdown-item" href="">Uli</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-12 col-md-6 col-lg-3 pt-3">
+          <div class="card" style="width: 18rem; box-shadow: 5px 5px 5px 5px black;">
+            <img src="{{info.carousel4.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: x-small; font-weight: 900;">best comic actor</h5>
+              <div class="dropdown">
+                <button class="btn  butt" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  Check Nominees
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item active" href="l">Igbariam</a></li>
+                  <li><a class="dropdown-item" href="">Uli</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock content %}
+
+{% block footer %}{% include 'footer.html' %}{% endblock footer %}{% include 'footer.html' %}
